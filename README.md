@@ -21,19 +21,19 @@ Step 2: Preparing Pre-Segmented Images
           Images of potholes that you’ve pre-segmented.
           Labels in YOLO format (text files where each line corresponds to a detected object in the image).
         2. Data Structure: Organize the dataset folder in the following structure:
-                    pothole_dataset/
-                    ├── images/
-                    │   ├── train/
-                    │   │   ├── image1.jpg
-                    │   │   ├── image2.jpg
-                    │   └── val/
-                    │       ├── image1.jpg
-                    ├── labels/
-                    │   ├── train/
-                    │   │   ├── image1.txt
-                    │   │   ├── image2.txt
-                    └── val/
-                        ├── image1.txt
+        
+                pothole_dataset/
+                ├── images/
+                │   ├── train/
+                │   │   ├── image1.jpg
+                │   │   ├── image2.jpg
+                │   └── val/
+                │       ├── image1.jpg
+                ├── labels/
+                │   ├── train/
+                │   │   ├── image1.txt
+                │   │   ├── image2.txt
+
           In each .txt file, the format follows:
             <class_id> <x_center> <y_center> <width> <height>
 Step 3: Configuring YOLOv8 for Pothole Detection
