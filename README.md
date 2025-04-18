@@ -15,6 +15,7 @@ Step 1: Setting Up the Environment
         4. Install Necessary Dependencies:
           Install the required libraries including Ultralytics (for YOLOv8), OpenCV, and other necessary dependencies:
                     pip install ultralytics opencv-python matplotlib
+
 Step 2: Preparing Pre-Segmented Images
         1. Prepare the Dataset:
           Ensure you have a dataset with pre-segmented images. These should include:
@@ -36,6 +37,7 @@ Step 2: Preparing Pre-Segmented Images
 
           In each .txt file, the format follows:
             <class_id> <x_center> <y_center> <width> <height>
+
 Step 3: Configuring YOLOv8 for Pothole Detection
         1.Create a YAML File for Dataset Configuration: In the Pothole_Detection_YOLOv8 folder, create a pothole_data.yaml file, which configures YOLOv8 to recognize the dataset:
           .yaml:
