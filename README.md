@@ -18,7 +18,7 @@ Step 1: Setting Up the Environment
 
 Step 2: Preparing Pre-Segmented Images
         1. Prepare the Dataset:
-          Ensure you have a dataset with pre-segmented images. These should include:
+          Ensure you have a dataset with pre-segmented images.Download the dataset from "Roboflow or Kaggle". These should include:
           Images of potholes that you’ve pre-segmented.
           Labels in YOLO format (text files where each line corresponds to a detected object in the image).
         2. Data Structure: Organize the dataset folder in the following structure:
@@ -66,7 +66,7 @@ Step 4: Training YOLOv8 on Pothole Detection
             model = YOLO('yolov8n.pt')  # choose the model size as per your requirement
 
             # Train the model using the pre-segmented dataset
-            model.train(data='pothole_data.yaml', epochs=50, imgsz=640, batch=16, name='pothole_detector')
+            model.train(data='dataset.yaml', epochs=50, imgsz=640, batch=16, name='pothole_detector')
   Run the Training: In your terminal, run the script:
             python train.py
   YOLOv8 will start training and save the results to the runs/detect/pothole_detector/ folder.
