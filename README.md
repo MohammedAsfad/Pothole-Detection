@@ -82,6 +82,8 @@ Step 4: Training YOLOv8 on Pothole Detection
   YOLOv8 will start training and save the results to the runs/detect/pothole_detector/ folder.
 
 Step 5: Inference and Pothole Detection
+
         Use the code detect.py mentioned in the repository
         Run the code
+        
             pyton detect.py
