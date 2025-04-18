@@ -1,0 +1,5 @@
+path: D:\Pothole_Detection_YOLOv8\dataset  # Path to your dataset
+train: D:\Pothole_Detection_YOLOv8\dataset\images\train  # Training images directory
+val: D:\Pothole_Detection_YOLOv8\dataset\images\val  # Validation images directory
+nc: 1  # Number of classes
+names: ['pothole']  # Class names
